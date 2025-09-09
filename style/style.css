@@ -29,6 +29,7 @@
 .login {
     background: linear-gradient(to bottom, #ad1515, #d82222, #e62828);
     width: 600px;
+    height: 540px;
     padding: 50px;
     border-radius: 15px;
     margin-top: 0;
@@ -54,7 +55,7 @@ input {
 }
 
 button {
-    background-color: gold;
+    background-color: rgb(211, 183, 25);
     display: flex;
     margin: 10px;
     font-size: 14px;
@@ -72,6 +73,8 @@ footer {
     color: azure;
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+    margin-top: 50px;
 }
 
 label {
