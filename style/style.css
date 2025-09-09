@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    background-color: white;
+    width: 100%;
+    height: 95px;
+    display: flex;
+}
+
+.logo img {
+    width: 90px;
+    height: 80px;
+    margin-left: 140px;
+    margin-top: 8px;
+}
+
+.principal {
+    background: linear-gradient(to bottom right, #b21217, #e52d27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.login {
+    background: linear-gradient(to bottom, #ad1515, #d82222, #e62828);
+    width: 600px;
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    margin: 40px;
+}
+
+p {
+    color: azure;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+input {
+    margin: 20px ;
+    padding: 10px;
+    width: 90%;
+    border: 0;
+}
+
+button {
+    background-color: gold;
+    display: flex;
+    margin: 10px;
+    font-size: 14px;
+    border: 0;
+    margin-left: 40%;
+    width: 110px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: azure;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    color: azure;
+    font-size: 17px;
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
