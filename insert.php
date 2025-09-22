@@ -1,6 +1,6 @@
 <?php 
 
-    $conexao = new mysqli('localhost', 'root', '', 'lanchonete', '3307');
+    include('conexao.php');
 
     $nome = $_GET['produto'];
     $preco = $_GET['preco'];
@@ -13,7 +13,7 @@
     echo "<br>";
     echo $quantidade;
 
-    $insert = "INSERT INTO cardapio VALUES('$nome', $preco, $quantidade)";
+    $insert = "INSERT INTO cardapio VALUES('', '$nome', $quantidade, $preco)";
 
     $conexao->query($insert);
 
