@@ -3,6 +3,7 @@
     include('conexao.php');
     $select = 'SELECT * FROM cardapio';
     $produtos = $conexao->query($select);
+    
 ?>
 <html lang="pt-br">
 <head>
