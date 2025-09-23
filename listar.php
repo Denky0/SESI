@@ -16,23 +16,31 @@
     <h1>Lista de Produtos</h1>
     <table class="table table-striped" border="1">
         <thead>
-            <th>Código</th>
+            <th>Id</th>
             <th>Produto</th>
             <th>Quantidade</th>
             <th>Preço</th>
+            <th>Ação</th>
         </thead>
         <tbody>
             <?php 
-
-                while($produto = $produtos->fetch_object()) {
+                if ($produtos->num_rows > 0) {
+                     while($produto = $produtos->fetch_object()) {
+                        echo "<tr>
+                            <td>$produto->id</td>
+                            <td>$produto->produto</td>
+                            <td>$produto->quantidade</td>
+                            <td>$produto->preco</td>
+                            <td>
+                                <a href='delete.php?id=$produto->id'>Excluir</a>
+                            </td>
+                        </tr>";
+                     }
+                }else{
                     echo "<tr>
-                        <td>$produto->id</td>
-                        <td>$produto->produto</td>
-                        <td>$produto->quantidade</td>
-                        <td>$produto->preco</td>
+                    <td>Nenhum produto cadastrado</td>
                     </tr>";
-                }
-            
+                }  
             ?>
         </tbody>
     </table>
