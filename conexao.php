@@ -1,6 +1,6 @@
 <?php 
 
-    $conexao = new mysqli('localhost', 'root', '', 'lanchonete', '3307');
+    $conexao = new mysqli('localhost', 'root', '', 'lanchonete',);
 
 
 

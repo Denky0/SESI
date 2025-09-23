@@ -3,6 +3,7 @@
     include('conexao.php');
     $select = 'SELECT * FROM cardapio';
     $produtos = $conexao->query($select);
+    
 ?>
 <html lang="pt-br">
 <head>
@@ -15,7 +16,7 @@
     <h1>Lista de Produtos</h1>
     <table class="table table-striped" border="1">
         <thead>
-            <th>Código</th>
+            <th>Id</th>
             <th>Produto</th>
             <th>Quantidade</th>
             <th>Preço</th>
