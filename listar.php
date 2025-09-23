@@ -5,6 +5,7 @@
     $produtos = $conexao->query($select);
     
 ?>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +37,7 @@
                             </td>
                         </tr>";
                      }
-                }else{
+                } else {
                     echo "<tr>
                     <td>Nenhum produto cadastrado</td>
                     </tr>";
